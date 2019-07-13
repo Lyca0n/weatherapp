@@ -1,8 +1,0 @@
-com/aauto/weatherapp/model/Reading.class
-com/aauto/weatherapp/model/Forecast.class
-com/aauto/weatherapp/model/ReadingDetail.class
-com/aauto/weatherapp/controller/CityController.class
-com/aauto/weatherapp/repository/CityRepository.class
-com/aauto/weatherapp/model/City.class
-com/aauto/weatherapp/WeatherappApplication.class
-com/aauto/weatherapp/controller/TestController.class
