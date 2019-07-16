@@ -6,26 +6,30 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class City{
+public class City {
     @Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String name;
-    private String countryCode;
-    
-    public String getName(){
+    private String country;
+
+    public String getName() {
         return this.name;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
-        
-    public String getCountryCode(){
-        return this.countryCode;
+
+    public String getCountry() {
+        return this.country;
     }
 
-    public void setCountryCode(String countryCode){
-        this.countryCode = countryCode;
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getCityAndState() {
+        return this.name + "," + this.country;
     }
 }
