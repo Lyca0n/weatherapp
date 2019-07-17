@@ -10,7 +10,7 @@ import com.aauto.weatherapp.model.Forecast;
 import com.aauto.weatherapp.service.ForecastService;
 
 @RestController
-public class TestController {
+public class ForecastController {
     @Autowired
     private ForecastService serv;
 

@@ -28,8 +28,4 @@ public class City {
     public void setCountry(String country) {
         this.country = country;
     }
-
-    public String getCityAndState() {
-        return this.name + "," + this.country;
-    }
 }
