@@ -14,7 +14,7 @@ public class ForecastController {
     @Autowired
     private ForecastService serv;
 
-    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    @RequestMapping(value = "/forecast", method = RequestMethod.GET)
     public Forecast list(@RequestParam String city) {
         return this.serv.getForecast(city);
     }
