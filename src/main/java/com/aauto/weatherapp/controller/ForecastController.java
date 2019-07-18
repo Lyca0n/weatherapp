@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import com.aauto.weatherapp.model.Forecast;
 import com.aauto.weatherapp.service.ForecastService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin( maxAge = 3600)
 @RestController
 public class ForecastController {
     @Autowired

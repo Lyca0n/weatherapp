@@ -8,7 +8,9 @@ import com.aauto.weatherapp.repository.CityRepository;
 import com.aauto.weatherapp.model.City;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin( maxAge = 3600)
 @RestController
 public class CityController{
     @Autowired
