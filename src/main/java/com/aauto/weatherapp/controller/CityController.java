@@ -1,6 +1,7 @@
 package com.aauto.weatherapp.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,5 +20,9 @@ public class CityController{
     @RequestMapping(value="/cities", method=RequestMethod.GET)
     public List<City> list(){        
         return cityRepository.findAll();
+    }
+    @RequestMapping(value="/cities", method=RequestMethod.POST)
+    public City save(@RequestBody City city){
+        return cityRepository.save(city);
     }
 }

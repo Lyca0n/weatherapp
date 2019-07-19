@@ -8,6 +8,8 @@ public class Reading {
     @JsonProperty("main")
     private ReadingDetail detail;
 
+    private long dt;
+
     public void setReadingDetail(ReadingDetail detil) {
         this.detail = detail;
     }
@@ -16,4 +18,11 @@ public class Reading {
         return this.detail;
     }
 
+    public void setDt(long dt){
+        this.dt = dt;
+    }
+
+    public long getDt(){
+       return this.dt;
+    }
 }
