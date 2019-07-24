@@ -19,7 +19,7 @@ public class ForecastService {
   public Forecast getForecast(String query) {
     String apiq = "?q=" + query;
     RestTemplate restTemplate = new RestTemplate();
-    Forecast fr = restTemplate.getForObject(this.url + apiq + "&APPID=" +this.key, Forecast.class);
+    Forecast fr = restTemplate.getForObject(this.url + apiq + "&APPID=" +this.key+"&units=metric", Forecast.class);
     // test endpoint
     //Forecast fr = restTemplate.getForObject("http://localhost:3000/forecasts/0", Forecast.class);
     return fr;
